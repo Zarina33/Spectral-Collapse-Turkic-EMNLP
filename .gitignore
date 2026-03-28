@@ -1,0 +1,35 @@
+# Data (too large for git)
+data/
+*.jsonl.gz
+
+# Model checkpoints
+*.safetensors
+*.bin
+*.pt
+checkpoint-*/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# LaTeX build
+*.aux
+*.log
+*.bbl
+*.blg
+*.out
+*.synctex.gz
+
+# Misc
+*.docx
