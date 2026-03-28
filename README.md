@@ -37,7 +37,7 @@ We fine-tune **Gemma-2-9B** (4-bit QLoRA) on three Turkic languages and monitor 
 Spectral energy never approaches the proposed 0.7 collapse threshold. The r=64 configuration shows **decreasing** SE despite suffering complete functional collapse.
 
 <p align="center">
-  <img src="figures/fig2_svd_dynamics.png" width="90%" alt="Spectral energy dynamics"/>
+  <img src="figures/fig2_svd_dynamics.png" width="85%" alt="Spectral energy dynamics"/>
 </p>
 
 ---
@@ -47,7 +47,7 @@ Spectral energy never approaches the proposed 0.7 collapse threshold. The r=64 c
 Frobenius norm growth reliably separates healthy from pathological training regimes within underrepresented languages. The transfer experiment begins at the KZ baseline's final norm and shows minimal additional growth.
 
 <p align="center">
-  <img src="figures/fig6_frobenius_dynamics.png" width="90%" alt="Frobenius norm dynamics"/>
+  <img src="figures/fig6_frobenius_dynamics.png" width="85%" alt="Frobenius norm dynamics"/>
 </p>
 
 ---
@@ -57,7 +57,7 @@ Frobenius norm growth reliably separates healthy from pathological training regi
 The heatmap reveals catastrophic forgetting patterns. The r=64 row is clearly pathological, while the KZ→KY transfer shows the most balanced profile.
 
 <p align="center">
-  <img src="figures/fig4_cross_ppl.png" width="70%" alt="Cross-lingual perplexity heatmap"/>
+  <img src="figures/fig4_cross_ppl.png" width="85%" alt="Cross-lingual perplexity heatmap"/>
 </p>
 
 ---
@@ -67,7 +67,7 @@ The heatmap reveals catastrophic forgetting patterns. The r=64 row is clearly pa
 No individual layer in any experiment exceeds the 0.7 threshold — even in configurations with complete functional collapse.
 
 <p align="center">
-  <img src="figures/fig3_layer_heatmap.png" width="90%" alt="Layer-wise spectral energy"/>
+  <img src="figures/fig3_layer_heatmap.png" width="85%" alt="Layer-wise spectral energy"/>
 </p>
 
 ---
@@ -77,7 +77,7 @@ No individual layer in any experiment exceeds the 0.7 threshold — even in conf
 Higher norm growth is associated with more severe catastrophic forgetting. The EN control is a clear outlier — well-represented languages absorb large perturbations without degradation.
 
 <p align="center">
-  <img src="figures/fig9_frobnorm_vs_ppl.png" width="65%" alt="Frobenius norm vs PPL scatter"/>
+  <img src="figures/fig9_frobnorm_vs_ppl.png" width="85%" alt="Frobenius norm vs PPL scatter"/>
 </p>
 
 ---
@@ -87,7 +87,7 @@ Higher norm growth is associated with more severe catastrophic forgetting. The E
 Extended training (10 epochs) improves target-language PPL but severely degrades cross-lingual knowledge — a regime of "useful overfitting."
 
 <p align="center">
-  <img src="figures/fig7_overfit_paradox.png" width="80%" alt="Overfit paradox"/>
+  <img src="figures/fig7_overfit_paradox.png" width="85%" alt="Overfit paradox"/>
 </p>
 
 ---
@@ -97,7 +97,7 @@ Extended training (10 epochs) improves target-language PPL but severely degrades
 The r=64 configuration develops a well-distributed spectrum (low SE) with dramatically larger absolute magnitudes — explaining why SE fails as a diagnostic.
 
 <p align="center">
-  <img src="figures/fig8_singular_values.png" width="90%" alt="Singular value distributions"/>
+  <img src="figures/fig8_singular_values.png" width="85%" alt="Singular value distributions"/>
 </p>
 
 ---
@@ -107,7 +107,7 @@ The r=64 configuration develops a well-distributed spectrum (low SE) with dramat
 The r=64 configuration shows increasing effective rank despite functional degradation — further evidence that standard spectral metrics can be misleading.
 
 <p align="center">
-  <img src="figures/fig5_effective_rank.png" width="90%" alt="Effective rank dynamics"/>
+  <img src="figures/fig5_effective_rank.png" width="85%" alt="Effective rank dynamics"/>
 </p>
 
 ---
